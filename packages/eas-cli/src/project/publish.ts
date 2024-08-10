@@ -21,6 +21,7 @@ import { AssetMetadataStatus, PartialManifestAsset } from '../graphql/generated'
 import { PublishMutation } from '../graphql/mutations/PublishMutation';
 import { PublishQuery } from '../graphql/queries/PublishQuery';
 import Log, { learnMore } from '../log';
+import { ora } from '../ora';
 import { RequestedPlatform, requestedPlatformDisplayNames } from '../platform';
 import { promptAsync } from '../prompts';
 import { getBranchNameFromChannelNameAsync } from '../update/getBranchNameFromChannelNameAsync';
